@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // fragment added at runtime
+        supportFragmentManager.beginTransaction().add(R.id.fragmentContainerView2, ColorFragment()).commit()
     }
 }
